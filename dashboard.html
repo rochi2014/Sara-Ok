@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SARA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid contenido">
+    <div class="row">
+      <div id="menu_1" class="col-md-2 d-flex flex-column align-items-center menu-principal text-white py-2">
+        <button class="nav-custom d-flex flex-column align-items-center" type="button" id="menu-toggle">
+          <span class="hamburger-icon nav-custom">
+            <div></div>
+            <div></div>
+            <div></div>
+          </span>
+        </button>
+        <div id="nav_01" class="d-flex flex-row text-white py-2 d-none-mobile"></div>
+      </div>
+      <div id="main_1" class="col-md-10 vh-100">
+        <div class="row">
+          <main class="col-md-12 p-2 margen-0" id="main_1">
+            <header class="p-2">
+              <div class="row">
+                <div class="col-md-8 d-flex justify-content-evenly align-items-center">
+                  <div class="d-flex flex-column align-items-center logo-sara">
+                    <img src="img/logoSara.jpeg" alt="Logo sara" class="img-fluid rounded w-50 mb-3">
+                  </div>
+                  <h1>Bienvenido a SARA</h1>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-evenly align-items-center">
+                  <img src="img/usuario.jpg" alt="Usuario" class="user-thumbnail rounded-circle me-2">
+                  <p><div id="cerrar-sesion"></div></p>
+                </div>
+              </div>
+            </header>
+            <div class="banner d-flex flex-column align-items-center p-2">
+              <div class="d-flex flex-column align-items-center">
+                <img src="img/parcelas.png" alt="Autoservicio Parcelas" class="img-fluid rounded">
+              </div>
+            </div>
+            <section>
+              <div class="seccion-1">
+                <div class="mb-4">
+                  <h2>Información de la Empresa</h2>
+                  <p>Servicios SARA se especializa en cambios de aceite y lavado de autos, ofreciendo calidad y un servicio confiable.</p>
+                </div>
+                <div>
+                  <label for="ventas-dia">Ventas del día: Hoy</label>
+                  <input type="number" id="ventas-dia" value="5600000.20" step="any" class="form-control mb-3">
+                  <button id="btn-conteo-ventas" class="btn btn-primary mb-3">Actualizar Ventas</button>
+                </div>
+                <div class="mb-4">
+                  <h3>Productos en Rojo</h3>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Producto</th>
+                        <th>Stock</th>
+                        <th>Acción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Aceite 10W-30</td>
+                        <td><span class="badge bg-danger">Bajo</span></td>
+                        <td><button class="btn btn-warning">Pedir al Proveedor</button></td>
+                      </tr>
+                      <tr>
+                        <td>Jabón para Lavado</td>
+                        <td><span class="badge bg-danger">Bajo</span></td>
+                        <td><button class="btn btn-warning">Pedir al Proveedor</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+        <div class="row">
+          <footer class="col-md-12 footer margen-0">
+            <h5>SARA V 0.1 Todos los derechos reservados</h5>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

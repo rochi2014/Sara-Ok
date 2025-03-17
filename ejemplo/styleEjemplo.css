@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    }
+.color-kelly-green{
+    background-color: #09B009;
+}
+
+.color-cream{
+    background-color: #EFF1C5;
+}
+
+.black-olive{
+    background-color: #424342; 
+}
+
+.rozy-brown{
+    background-color: #AF8D86; 
+}
+
+.cool-gray{
+    background-color: #A0A4B8; 
+}
+
+.tam-img{
+    width: 65%;
+    height: 250px;
+    margin: 0 auto;
+    
+}
+
+
+
+
